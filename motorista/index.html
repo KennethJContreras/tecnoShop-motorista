@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Motorista</title>
+</head>
+
+<body>
+    <!-- CONTENIDO LOGIN -->
+    <div id="login-motorista-container" class="main-container">
+        <div id="login-motorista-content" class="content">
+            <header class="container-logo">
+                <img src="assets/img/logo-blanco.png" alt="logo">
+            </header>
+
+            <div class="container-imagen">
+                <img src="assets/img/motorista.png" alt="motociclista">
+                <h1>MOTORISTA</h1>
+            </div>
+
+            <main class="container-formulario">
+                <form action="">
+                    <section>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="usuario">
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="contraseña">
+                    </section>
+                </form>
+            </main>
+
+            <footer class="container-boton">
+                <button type="submit">INICIAR SESION</button>
+                <p>No tengo cuenta, <a href="#" onclick="ocultar()">registrarme</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- CONTENIDO REGISTRO -->
+    <div id="registro-motorista-container" class="main-container">
+        <div id="registro-motorista-content" class="content">
+            <!-- <nav>
+                <div class="logo-nav">
+                    <img id="logo-tecno-shop" src="assets/img/logo-negativo.png" alt="logo-empresa">
+                </div>
+                <img src="assets/img/motorista.png" alt="">
+            </nav> -->
+            <section class="titulo">
+                <div>Registrate</div>
+                Ingresa tus datos
+            </section>
+            <main>
+                <div class="contenedor-input">
+                    <p>Nombre completo</p>
+                    <input id="inp-nombre" class="input-bonito" type="text" placeholder="Usuario">
+                </div>
+                <div class="contenedor-input">
+                    <p>Email</p>
+                    <input id="inp-email" class="input-bonito" type="email" placeholder="keneth00@gmail.com">
+                </div>
+                <div class="contenedor-input">
+                    <p>Teléfono</p>
+                    <input id="inp-telefono" class="input-bonito" type="text" placeholder="0000-0000">
+                </div>
+                <div class="contenedor-input">
+                    <p>Contraseña</p>
+                    <input id="inp-contraseña" class="input-bonito" type="password">
+                </div>
+                <div class="contenedor-input">
+                    <p>Confirme su contraseña</p>
+                    <input id="inp-contraseña2" class="input-bonito" type="password">
+                </div>
+            </main>
+            <footer>
+                <button id="btn-listo" onclick="validacionInputs()">Listo</button>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8b44041adf.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
